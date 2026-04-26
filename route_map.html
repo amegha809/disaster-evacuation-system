@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7aa795b13a61dddd94e162755ee014a0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7aa795b13a61dddd94e162755ee014a0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7aa795b13a61dddd94e162755ee014a0 = L.map(
+                "map_7aa795b13a61dddd94e162755ee014a0",
+                {
+                    center: [30.3663419, 78.0704631],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_744343a775ad8fe88349416547bf0300 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_744343a775ad8fe88349416547bf0300.addTo(map_7aa795b13a61dddd94e162755ee014a0);
+        
+    
+            var marker_1afea48d90e866e97b006c463681f45b = L.marker(
+                [30.3663419, 78.0704631],
+                {
+}
+            ).addTo(map_7aa795b13a61dddd94e162755ee014a0);
+        
+    
+            var icon_5770d312bb1736aaa1e9765185b3c9ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_961c0e69011d86f41d03a05aaea4e315 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_836c16d2da9e34df6be94dac680b41ae = $(`<div id="html_836c16d2da9e34df6be94dac680b41ae" style="width: 100.0%; height: 100.0%;">User Location</div>`)[0];
+                popup_961c0e69011d86f41d03a05aaea4e315.setContent(html_836c16d2da9e34df6be94dac680b41ae);
+            
+        
+
+        marker_1afea48d90e866e97b006c463681f45b.bindPopup(popup_961c0e69011d86f41d03a05aaea4e315)
+        ;
+
+        
+    
+    
+            marker_1afea48d90e866e97b006c463681f45b.bindTooltip(
+                `<div>
+                     Start
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1afea48d90e866e97b006c463681f45b.setIcon(icon_5770d312bb1736aaa1e9765185b3c9ac);
+            
+    
+            var marker_ec6e6031aa32880ea2719708e22d9da2 = L.marker(
+                [30.35, 78.06],
+                {
+}
+            ).addTo(map_7aa795b13a61dddd94e162755ee014a0);
+        
+    
+            var icon_a9e0beb99572c797c4b833c708c46004 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ed0c142f02246dcf308c3e85dc73878 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3993f6719b66e2c206fbf4592a679822 = $(`<div id="html_3993f6719b66e2c206fbf4592a679822" style="width: 100.0%; height: 100.0%;">🏥 Emergency Shelter Premnagar</div>`)[0];
+                popup_9ed0c142f02246dcf308c3e85dc73878.setContent(html_3993f6719b66e2c206fbf4592a679822);
+            
+        
+
+        marker_ec6e6031aa32880ea2719708e22d9da2.bindPopup(popup_9ed0c142f02246dcf308c3e85dc73878)
+        ;
+
+        
+    
+    
+            marker_ec6e6031aa32880ea2719708e22d9da2.bindTooltip(
+                `<div>
+                     Emergency Shelter Premnagar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ec6e6031aa32880ea2719708e22d9da2.setIcon(icon_a9e0beb99572c797c4b833c708c46004);
+            
+    
+            var poly_line_5be31daa7188e511a879e37612ad203b = L.polyline(
+                [[30.3668879, 78.0702792], [30.3662965, 78.0711545], [30.3666032, 78.0714222], [30.3681592, 78.0729319], [30.368645, 78.0738648], [30.3689061, 78.0742512], [30.3694423, 78.0748673], [30.369846, 78.0752786], [30.3705154, 78.0761781], [30.3715045, 78.0773726], [30.3715859, 78.0773857], [30.3716197, 78.0774726], [30.371597, 78.0775321], [30.3714503, 78.0774743], [30.3711876, 78.077194], [30.3692282, 78.0748165], [30.3688375, 78.0743699], [30.3681945, 78.0732171], [30.3673323, 78.0722523], [30.3667747, 78.0717685], [30.3642338, 78.0696254], [30.364052, 78.0694609], [30.3638576, 78.0692654], [30.3636217, 78.0690564], [30.3602589, 78.0674062], [30.3599582, 78.0673728], [30.3594411, 78.067261], [30.353195, 78.0633752], [30.3487708, 78.062432], [30.3473702, 78.0624195], [30.344862, 78.0618257], [30.3449019, 78.0616883], [30.3458512, 78.0589023], [30.3459418, 78.0587668], [30.3463126, 78.0581906], [30.3469569, 78.0580808], [30.3475674, 78.0586226], [30.347917, 78.0589067]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_7aa795b13a61dddd94e162755ee014a0);
+        
+    
+            var marker_eafa96e13c67bf5ff7b4f01be282371a = L.marker(
+                [30.3715045, 78.0773726],
+                {
+}
+            ).addTo(map_7aa795b13a61dddd94e162755ee014a0);
+        
+    
+            var icon_2666a07aa62860d8558d02b063c320c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_654670bd702856b8e96ca93e89adcdc6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9eaa5cb16e047668065c3bbc18e2dc1 = $(`<div id="html_e9eaa5cb16e047668065c3bbc18e2dc1" style="width: 100.0%; height: 100.0%;">Step 1: Via Rajpur-Mussoorie Road</div>`)[0];
+                popup_654670bd702856b8e96ca93e89adcdc6.setContent(html_e9eaa5cb16e047668065c3bbc18e2dc1);
+            
+        
+
+        marker_eafa96e13c67bf5ff7b4f01be282371a.bindPopup(popup_654670bd702856b8e96ca93e89adcdc6)
+        ;
+
+        
+    
+    
+            marker_eafa96e13c67bf5ff7b4f01be282371a.bindTooltip(
+                `<div>
+                     Step 1: Via Rajpur-Mussoorie Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eafa96e13c67bf5ff7b4f01be282371a.setIcon(icon_2666a07aa62860d8558d02b063c320c3);
+            
+    
+            var marker_13d6b3aa36592c9a40758820b025efa2 = L.marker(
+                [30.3667747, 78.0717685],
+                {
+}
+            ).addTo(map_7aa795b13a61dddd94e162755ee014a0);
+        
+    
+            var icon_6ce2ac6139ffbc52b4de9cb5ed450b17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd97d22fa4325aeb923f5d20dc2b391d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b82f1982baae7f4bd5d1d4f92323ca4f = $(`<div id="html_b82f1982baae7f4bd5d1d4f92323ca4f" style="width: 100.0%; height: 100.0%;">Step 2: Via Rajpur-Mussoorie Road</div>`)[0];
+                popup_fd97d22fa4325aeb923f5d20dc2b391d.setContent(html_b82f1982baae7f4bd5d1d4f92323ca4f);
+            
+        
+
+        marker_13d6b3aa36592c9a40758820b025efa2.bindPopup(popup_fd97d22fa4325aeb923f5d20dc2b391d)
+        ;
+
+        
+    
+    
+            marker_13d6b3aa36592c9a40758820b025efa2.bindTooltip(
+                `<div>
+                     Step 2: Via Rajpur-Mussoorie Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_13d6b3aa36592c9a40758820b025efa2.setIcon(icon_6ce2ac6139ffbc52b4de9cb5ed450b17);
+            
+    
+            var marker_09e54d3c2baeebad7d9c8e57363c282c = L.marker(
+                [30.3487708, 78.062432],
+                {
+}
+            ).addTo(map_7aa795b13a61dddd94e162755ee014a0);
+        
+    
+            var icon_a0fe60c8ffab73dec727d7c7b983393d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4e47e88f4ceaee2c4269f91f3d670208 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5575aeed2d63cd4cc60a7331f811f48 = $(`<div id="html_f5575aeed2d63cd4cc60a7331f811f48" style="width: 100.0%; height: 100.0%;">Step 3: Via Rajpur-Mussoorie Road</div>`)[0];
+                popup_4e47e88f4ceaee2c4269f91f3d670208.setContent(html_f5575aeed2d63cd4cc60a7331f811f48);
+            
+        
+
+        marker_09e54d3c2baeebad7d9c8e57363c282c.bindPopup(popup_4e47e88f4ceaee2c4269f91f3d670208)
+        ;
+
+        
+    
+    
+            marker_09e54d3c2baeebad7d9c8e57363c282c.bindTooltip(
+                `<div>
+                     Step 3: Via Rajpur-Mussoorie Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_09e54d3c2baeebad7d9c8e57363c282c.setIcon(icon_a0fe60c8ffab73dec727d7c7b983393d);
+            
+</script>
+</html>
